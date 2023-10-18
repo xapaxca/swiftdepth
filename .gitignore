@@ -1,0 +1,7 @@
+__pycache__
+TrainLogs
+results\swiftdepth\eigen_split
+results\swiftdepth-small\eigen_split
+*.pyc
+*.jpg
+*.npy
