@@ -1,12 +1,6 @@
-'''
-The code is adapted/adopted primarily from Monodepth2:
-GitHub: https://github.com/nianticlabs/monodepth2
-Paper: https://arxiv.org/abs/1806.01260
-
-It also adapted from EPCDepth:
-GitHub: https://github.com/prstrive/EPCDepth
-Paper: https://arxiv.org/abs/2109.12484
-'''
+# The code is adapted from EPCDepth:
+# EPCDepth GitHub: https://github.com/prstrive/EPCDepth
+# EPCDepth paper: https://arxiv.org/abs/2109.12484
 
 from __future__ import absolute_import, division, print_function
 

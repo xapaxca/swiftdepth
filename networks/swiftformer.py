@@ -1,8 +1,6 @@
-'''
-The code is adapted/adopted primarily from Monodepth2:
-GitHub: https://github.com/Amshaker/SwiftFormer
-Paper: https://arxiv.org/abs/2303.15446
-'''
+# The code is adapted from SwiftFormer.
+# SwiftFormer GitHub: https://github.com/Amshaker/SwiftFormer
+# SwiftFormer paper: https://arxiv.org/abs/2303.15446
 
 import torch
 import torch.nn as nn

@@ -1,12 +1,10 @@
-'''
-The code is adapted/adopted primarily from Monodepth2:
-GitHub: https://github.com/nianticlabs/monodepth2
-Paper: https://arxiv.org/abs/1806.01260
+# Copyright Niantic 2019. Patent Pending. All rights reserved.
+#
+# This software is licensed under the terms of the Monodepth2 licence
+# which allows for non-commercial use only, the full terms of which are made
+# available in the LICENSE file.
 
-It also adapted from VTDepth:
-GitHub: https://github.com/ahbpp/VTDepth
-Paper: https://ieeexplore.ieee.org/document/9995672
-'''
+### MODIFIED
 
 from __future__ import absolute_import, division, print_function
 

@@ -1,9 +1,3 @@
-'''
-The code is adapted/adopted primarily from Monodepth2:
-GitHub: https://github.com/nianticlabs/monodepth2
-Paper: https://arxiv.org/abs/1806.01260
-'''
-
 from __future__ import absolute_import, division, print_function
 
 import numpy as np

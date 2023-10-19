@@ -1,15 +1,14 @@
-'''
-The code is adapted/adopted primarily from Monodepth2:
-GitHub: https://github.com/nianticlabs/monodepth2
-Paper: https://arxiv.org/abs/1806.01260
-'''
+# Copyright Niantic 2019. Patent Pending. All rights reserved.
+#
+# This software is licensed under the terms of the Monodepth2 licence
+# which allows for non-commercial use only, the full terms of which are made
+# available in the LICENSE file.
 
 from __future__ import absolute_import, division, print_function
 
 import torch
 import torch.nn as nn
 from collections import OrderedDict
-import typing as tp
 
 
 class PoseDecoder(nn.Module):
@@ -48,30 +47,6 @@ class PoseDecoder(nn.Module):
         out = out.mean(3).mean(2)
 
         out = 0.01 * out.view(-1, self.num_frames_to_predict_for, 1, 6)
-
-        axisangle = out[..., :3]
-        translation = out[..., 3:]
-
-        return axisangle, translation
-
-
-class DepthDecoderForPVIT(nn.Module):
-    def __init__(self, num_ch_enc, num_input_features):
-        super().__init__()
-        self.num_input_features = num_input_features
-
-        self.head = nn.Sequential(
-            nn.ReLU(),
-            nn.Linear(num_ch_enc, num_ch_enc // 2),
-            nn.ReLU(),
-            nn.Linear(num_ch_enc // 2, num_input_features * 6)
-            )
-
-    def forward(self, x: tp.List[torch.Tensor]):
-        x = x[-1]
-        print(x.shape, "***")
-        out = self.head(x)
-        out = 0.01 * out.view(-1, self.num_input_features, 1, 6)
 
         axisangle = out[..., :3]
         translation = out[..., 3:]
