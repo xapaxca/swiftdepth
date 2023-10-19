@@ -4,10 +4,12 @@
 2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)
 
 ## Results on [KITTI](https://www.cvlibs.net/datasets/kitti/) dataset
-| Model             | AbsRel ↓ | SqRel ↓ | RMSE ↓ | RMSElog ↓ | δ < 1.251 ↑ | δ < 1.252 ↑ | δ < 1.253 ↑ | MParam ↓ | GMACs ↓ |
-| ----------------- | -------- | ------- | ------ | --------- | ----------- | ----------- | ----------- | -------- | ------- |
-| SwiftDepth-small  | 0.110    | 0.830   | 4.700  | 0.187     | 0.882       | 0.962       | 0.982       | 3.6      | 3.6     |
-| SwiftDepth        | 0.107    | 0.790   | 4.643  | 0.182     | 0.888       | 0.963       | 0.983       | 6.4      | 4.9     |
+| Model            | AbsRel | SqRel | RMSE  | RMSElog | δ < 1.25 | δ < 1.25^2 | δ < 1.25^3 | MParam | GMACs |
+| ---------------- | ------ | ----- | ----- | ------- | -------- | ---------- | ---------- | ------ | ----- |
+| SwiftDepth-small | 0.11   | 0.83  | 4.7   | 0.187   | 0.882    | 0.962      | 0.982      | 3.6    | 3.6   |
+| SwiftDepth       | 0.107  | 0.79  | 4.643 | 0.182   | 0.888    | 0.963      | 0.983      | 6.4    | 4.9   |
+
+Model setup: single frame, monocular training, ResNet18-based pose network, no additional supervision, no post-processing, image resolution of 192x640, and pre-training solely on ImageNet.
 
 ## Preparation
 
