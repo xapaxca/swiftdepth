@@ -42,4 +42,6 @@ python evaluate_depth.py --config configs.swiftformer_XS_pretrained --load_weigh
 ## Acknowledgement
 The code is adapted primarily from [Monodepth2](https://github.com/nianticlabs/monodepth2).
 
-It also adapted from [SwiftFormer](https://github.com/Amshaker/SwiftFormer), [VTDepth](https://github.com/ahbpp/VTDepth), [EPCDepth](https://github.com/prstrive/EPCDepth), and [Lite-Mono](https://github.com/noahzn/Lite-Mono).
+It also adapted from [VTDepth](https://github.com/ahbpp/VTDepth), [EPCDepth](https://github.com/prstrive/EPCDepth), and [Lite-Mono](https://github.com/noahzn/Lite-Mono).
+
+Special thanks to [SwiftFormer](https://github.com/Amshaker/SwiftFormer) for publicly available code and weights for their efficient backbone used as an encoder for SwiftDepth.
