@@ -1,7 +1,7 @@
 __pycache__
 TrainLogs
-results\swiftdepth\eigen_split
-results\swiftdepth-small\eigen_split
+full_results
+other_models_results
 *.pyc
 *.jpg
 *.npy
