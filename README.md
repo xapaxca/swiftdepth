@@ -20,7 +20,7 @@ Refer to [Monodepth2](https://github.com/nianticlabs/monodepth2) for KITTI datas
 ## Training
 **SwiftDepth**
 ```shell
-python train.py --data_path D:\kitti_dataset\jpg --log_dir LOG_DIR_PATH --model_name SwiftDepth_S_run --split eigen_zhou --num_workers 8 --eval_mono --pose_model_type separate_resnet --learning_rate 1e-4 --num_epochs 20 --scheduler_step_size 17 --config configs.swiftformer_S_pretrained --batch_size 16
+python train.py --data_path KITTI_DATA_PATH --log_dir LOG_DIR_PATH --model_name SwiftDepth_S_run --split eigen_zhou --num_workers 8 --eval_mono --pose_model_type separate_resnet --learning_rate 1e-4 --num_epochs 20 --scheduler_step_size 17 --config configs.swiftformer_S_pretrained --batch_size 16
 ```
 
 **SwiftDepth-small**
