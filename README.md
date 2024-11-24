@@ -48,9 +48,12 @@ Special thanks to [SwiftFormer](https://github.com/Amshaker/SwiftFormer) for pub
 
 ## Citation
 ```
-@INPROCEEDINGS{10322131,
+@InProceedings{10322131,
   author={Luginov, Albert and Makarov, Ilya},
   booktitle={2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)}, 
   title={SwiftDepth: An Efficient Hybrid CNN-Transformer Model for Self-Supervised Monocular Depth Estimation on Mobile Devices},
-  doi={10.1109/ISMAR-Adjunct60411.2023.00137}}
+  year={2023},
+  pages={642-647},
+  doi={10.1109/ISMAR-Adjunct60411.2023.00137}
+}
 ```
