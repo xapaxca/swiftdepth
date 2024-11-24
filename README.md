@@ -45,3 +45,12 @@ The code is adapted primarily from [Monodepth2](https://github.com/nianticlabs/m
 It also adapted from [VTDepth](https://github.com/ahbpp/VTDepth), [EPCDepth](https://github.com/prstrive/EPCDepth), and [Lite-Mono](https://github.com/noahzn/Lite-Mono).
 
 Special thanks to [SwiftFormer](https://github.com/Amshaker/SwiftFormer) for publicly available code and weights for their efficient backbone used as an encoder for SwiftDepth.
+
+## Citation
+```
+@INPROCEEDINGS{10322131,
+  author={Luginov, Albert and Makarov, Ilya},
+  booktitle={2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)}, 
+  title={SwiftDepth: An Efficient Hybrid CNN-Transformer Model for Self-Supervised Monocular Depth Estimation on Mobile Devices},
+  doi={10.1109/ISMAR-Adjunct60411.2023.00137}}
+```
